@@ -1,5 +1,4 @@
-require "resas_kit/version"
-
-module ResasKit
-  # Your code goes here...
-end
+require "active_support/core_ext/string/inflections"
+require "faraday"
+require "faraday_middleware"
+require "resas_kit/client"
