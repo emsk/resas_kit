@@ -1,4 +1,4 @@
-require "resas_kit/resource"
+require 'resas_kit/resource'
 
 module ResasKit
   class Response

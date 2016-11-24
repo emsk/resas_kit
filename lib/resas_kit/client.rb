@@ -1,5 +1,5 @@
-require "resas_kit/response"
-require "resas_kit/version"
+require 'resas_kit/response'
+require 'resas_kit/version'
 
 module ResasKit
   class Client
