@@ -4,7 +4,7 @@ module ResasKit
       status_code = response['statusCode'].to_s
       description = response['description'].to_s
 
-      message = "#{self.name.demodulize} - #{response['message']}"
+      message = "#{name.demodulize} - #{response['message']}"
       message += " (STATUS CODE: #{status_code})" unless status_code.empty?
       message += " (DESCRIPTION: #{description})" unless description.empty?
       message
