@@ -4,6 +4,7 @@ module ResasKit
   class Response
     class RaiseError < ResasKit::Response::Middleware
       CODE_ERRORS = {
+        400 => ResasKit::BadRequestError,
         403 => ResasKit::ForbiddenError,
         404 => ResasKit::NotFoundError,
         429 => ResasKit::TooManyRequestsError

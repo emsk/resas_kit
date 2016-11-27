@@ -13,6 +13,7 @@ module ResasKit
 
   class ConnectionError < Error; end
   class UnexpectedError < Error; end
+  class BadRequestError < Error; end
   class ForbiddenError < Error; end
   class NotFoundError < Error; end
   class TooManyRequestsError < Error; end
