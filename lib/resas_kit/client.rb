@@ -1,3 +1,4 @@
+require 'resas_kit/error'
 require 'resas_kit/response'
 require 'resas_kit/version'
 
@@ -25,6 +26,8 @@ module ResasKit
     def request(method, path, params = {})
       faraday_response = connection.send(method, request_path(path), params)
       ResasKit::Response.new(faraday_response)
+    rescue Faraday::ConnectionFailed => e
+      raise ResasKit::Error, "#{ResasKit::ConnectionError.name.demodulize} - #{e.message}"
     end
 
     def connection
