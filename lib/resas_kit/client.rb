@@ -1,6 +1,7 @@
 require 'resas_kit/error'
 require 'resas_kit/response'
 require 'resas_kit/version'
+require 'resas_kit/response/raise_error'
 
 module ResasKit
   class Client
@@ -34,6 +35,7 @@ module ResasKit
       Faraday.new(url: API_ENDPOINT, headers: request_headers) do |faraday|
         faraday.request(:url_encoded)
         faraday.response(:json, content_type: /application\/json/)
+        faraday.response(:error)
         faraday.adapter(Faraday.default_adapter)
       end
     end
