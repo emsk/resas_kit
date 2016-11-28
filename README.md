@@ -1,5 +1,7 @@
 # ResasKit
 
+[![Build Status](https://travis-ci.org/emsk/resas_kit.svg?branch=master)](https://travis-ci.org/emsk/resas_kit)
+
 Ruby wrapper for the [RESAS API](https://opendata.resas-portal.go.jp).
 
 ## Usage
