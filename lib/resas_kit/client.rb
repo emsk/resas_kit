@@ -2,6 +2,7 @@ require 'resas_kit/error'
 require 'resas_kit/response'
 require 'resas_kit/version'
 require 'resas_kit/response/raise_error'
+require 'resas_kit/hash_extensions'
 
 module ResasKit
   class Client
@@ -25,6 +26,7 @@ module ResasKit
     private
 
     def request(method, path, params = {})
+      params.camelize_keys!
       faraday_response = connection.send(method, request_path(path), params)
       ResasKit::Response.new(faraday_response)
     rescue Faraday::ConnectionFailed => e
