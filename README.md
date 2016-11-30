@@ -34,6 +34,10 @@ You can create instance more easily.
 client = ResasKit::Client.new
 ```
 
+## Supported RESAS API Version
+
+ResasKit supports RESAS API [v1-rc.1](https://opendata.resas-portal.go.jp/docs/api/v1-rc.1/index.html).
+
 ## License
 
 [MIT](LICENSE.txt)
