@@ -38,6 +38,13 @@ client = ResasKit::Client.new
 
 ResasKit supports RESAS API [v1-rc.1](https://opendata.resas-portal.go.jp/docs/api/v1-rc.1/index.html).
 
+## Supported Ruby Versions
+
+* Ruby 2.0.0
+* Ruby 2.1
+* Ruby 2.2
+* Ruby 2.3
+
 ## License
 
 [MIT](LICENSE.txt)
