@@ -45,6 +45,14 @@ ResasKit supports RESAS API [v1-rc.1](https://opendata.resas-portal.go.jp/docs/a
 * Ruby 2.2
 * Ruby 2.3
 
+## Contributing
+
+1. Fork it ( https://github.com/emsk/resas_kit/fork )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request
+
 ## License
 
 [MIT](LICENSE.txt)
