@@ -4,6 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/emsk/resas_kit/badge.svg?branch=master)](https://coveralls.io/github/emsk/resas_kit)
 [![Code Climate](https://codeclimate.com/github/emsk/resas_kit/badges/gpa.svg)](https://codeclimate.com/github/emsk/resas_kit)
 [![Dependency Status](https://gemnasium.com/badges/github.com/emsk/resas_kit.svg)](https://gemnasium.com/github.com/emsk/resas_kit)
+[![Inline docs](http://inch-ci.org/github/emsk/resas_kit.svg?branch=master)](http://inch-ci.org/github/emsk/resas_kit)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.txt)
 
 Ruby wrapper for the [RESAS API](https://opendata.resas-portal.go.jp).
