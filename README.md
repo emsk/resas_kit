@@ -13,7 +13,7 @@ Ruby wrapper for the [RESAS API](https://opendata.resas-portal.go.jp).
 ```ruby
 require 'resas_kit'
 
-client = ResasKit::Client.new(api_key: '1234567890ABCDEFGHIJ1234567890abcdefghij')
+client = ResasKit::Client.new(api_key: '1234567890ABCDEFGHIJ1234567890abcdefghij', api_version: 'v1-rc.1')
 
 response = client.get('prefectures')
 response.body # get body
@@ -28,9 +28,10 @@ client.get('prefectures').body.result[0].pref_name # method chaining
 
 ## ENV
 
-| ENV Variable | Description |
-| :----------- | :---------- |
-| `RESAS_API_KEY` | Your RESAS API KEY. |
+| ENV Variable | Description | Default |
+| :----------- | :---------- | :------ |
+| `RESAS_API_KEY` | Your RESAS API KEY. | |
+| `RESAS_API_VERSION` | Target RESAS API VERSION. | `v1-rc.1` |
 
 You can create instance more easily.
 

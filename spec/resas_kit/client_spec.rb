@@ -1,6 +1,7 @@
 describe ResasKit::Client do
   let(:api_key) { 'test-api-key' }
-  let(:client) { described_class.new(api_key: api_key) }
+  let(:api_version) { 'test-api-version' }
+  let(:client) { described_class.new(api_key: api_key, api_version: api_version) }
 
   describe '.new' do
     subject { client }
@@ -8,6 +9,8 @@ describe ResasKit::Client do
     it { is_expected.to be_a described_class }
     it { is_expected.to respond_to(:api_key) }
     it { is_expected.to respond_to(:api_key=) }
+    it { is_expected.to respond_to(:api_version) }
+    it { is_expected.to respond_to(:api_version=) }
   end
 
   describe '#api_key' do
@@ -26,6 +29,25 @@ describe ResasKit::Client do
       end
 
       it { is_expected.to eq api_key_env }
+    end
+  end
+
+  describe '#api_version' do
+    subject { client.api_version }
+
+    context 'when preset @api_version from args' do
+      it { is_expected.to eq api_version }
+    end
+
+    context 'when preset @api_version from ENV' do
+      let(:client) { described_class.new }
+      let(:api_version_env) { 'test-api-version-env' }
+
+      before do
+        stub_const('ENV', 'RESAS_API_VERSION' => api_version_env)
+      end
+
+      it { is_expected.to eq api_version_env }
     end
   end
 
@@ -108,7 +130,7 @@ describe ResasKit::Client do
   end
 
   def stub_api_request
-    stub_request(request_method, "#{described_class::API_ENDPOINT}/api/v1-rc.1/#{request_path}")
+    stub_request(request_method, "#{described_class::API_ENDPOINT}/api/#{api_version}/#{request_path}")
       .with({ headers: { 'User-Agent' => described_class::USER_AGENT } }.merge(camelized_request_params))
       .to_return(dummy_response)
   end

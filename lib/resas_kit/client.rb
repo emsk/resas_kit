@@ -7,12 +7,14 @@ require 'resas_kit/hash_extensions'
 module ResasKit
   class Client
     API_ENDPOINT = 'https://opendata.resas-portal.go.jp'.freeze
-    USER_AGENT = "ResasKit Ruby Gem #{ResasKit::VERSION}".freeze
+    API_VERSION  = 'v1-rc.1'.freeze
+    USER_AGENT   = "ResasKit Ruby Gem #{ResasKit::VERSION}".freeze
 
-    attr_accessor :api_key
+    attr_accessor :api_key, :api_version
 
     def initialize(options = {})
-      @api_key = ENV['RESAS_API_KEY']
+      @api_key     = ENV['RESAS_API_KEY']
+      @api_version = ENV['RESAS_API_VERSION']
 
       options.each do |key, value|
         instance_variable_set(:"@#{key}", value)
@@ -47,7 +49,11 @@ module ResasKit
     end
 
     def request_path(path)
-      "/api/v1-rc.1/#{URI.escape(path)}"
+      "/api/#{request_api_version}/#{URI.escape(path)}"
+    end
+
+    def request_api_version
+      @api_version || API_VERSION
     end
   end
 end
