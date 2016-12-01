@@ -5,6 +5,9 @@ require 'resas_kit/response/raise_error'
 require 'resas_kit/hash_extensions'
 
 module ResasKit
+  # Client for the RESAS API
+  #
+  # @see https://opendata.resas-portal.go.jp
   class Client
     API_ENDPOINT = 'https://opendata.resas-portal.go.jp'.freeze
     API_VERSION  = 'v1-rc.1'.freeze
@@ -12,6 +15,11 @@ module ResasKit
 
     attr_accessor :api_key, :api_version
 
+    # Initialize a new Client object with given options
+    #
+    # @param options [Hash] Initialize options
+    # @option options [String] :api_key RESAS API key
+    # @option options [String] :api_version RESAS API version
     def initialize(options = {})
       @api_key     = ENV['RESAS_API_KEY']
       @api_version = ENV['RESAS_API_VERSION']
@@ -21,6 +29,11 @@ module ResasKit
       end
     end
 
+    # Make a HTTP GET request
+    #
+    # @param path [String] Path for request
+    # @param params [Hash] Request parameters
+    # @return [ResasKit::Response] Response from API server
     def get(path, params = {})
       request(:get, path, params)
     end
