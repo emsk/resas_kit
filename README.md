@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/emsk/resas_kit.svg?branch=master)](https://travis-ci.org/emsk/resas_kit)
 [![Coverage Status](https://coveralls.io/repos/github/emsk/resas_kit/badge.svg?branch=master)](https://coveralls.io/github/emsk/resas_kit)
+[![Code Climate](https://codeclimate.com/github/emsk/resas_kit/badges/gpa.svg)](https://codeclimate.com/github/emsk/resas_kit)
 
 Ruby wrapper for the [RESAS API](https://opendata.resas-portal.go.jp).
 
