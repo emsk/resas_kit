@@ -13,6 +13,10 @@ Metrics/BlockLength:
 Style/DoubleNegation:
   Enabled: false
 
+Style/ExtraSpacing:
+  Exclude:
+    - '*.gemspec'
+
 Style/MultilineMethodCallIndentation:
   EnforcedStyle: indented
 
@@ -21,6 +25,10 @@ Style/PercentLiteralDelimiters:
 
 Style/RegexpLiteral:
   Enabled: false
+
+Style/SpaceAroundOperators:
+  Exclude:
+    - '*.gemspec'
 
 Style/UnneededPercentQ:
   Enabled: false
