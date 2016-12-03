@@ -10,5 +10,17 @@ Metrics/BlockLength:
     - 'spec/**/*.rb'
     - '*.gemspec'
 
+Style/DoubleNegation:
+  Enabled: false
+
 Style/MultilineMethodCallIndentation:
   EnforcedStyle: indented
+
+Style/PercentLiteralDelimiters:
+  Enabled: false
+
+Style/RegexpLiteral:
+  Enabled: false
+
+Style/UnneededPercentQ:
+  Enabled: false
