@@ -14,7 +14,7 @@ Ruby wrapper for the [RESAS API](https://opendata.resas-portal.go.jp).
 ```ruby
 require 'resas_kit'
 
-client = ResasKit::Client.new(api_key: '1234567890ABCDEFGHIJ1234567890abcdefghij', api_version: 'v1-rc.1')
+client = ResasKit::Client.new(api_key: '1234567890ABCDEFGHIJ1234567890abcdefghij')
 
 response = client.get('prefectures')
 response.body # get body
@@ -29,10 +29,10 @@ client.get('prefectures').body.result[0].pref_name # method chaining
 
 ## ENV
 
-| ENV Variable | Description | Default |
-| :----------- | :---------- | :------ |
-| `RESAS_API_KEY` | Your RESAS API KEY. | |
-| `RESAS_API_VERSION` | Target RESAS API VERSION. | `v1-rc.1` |
+| ENV Variable | Description |
+| :----------- | :---------- |
+| `RESAS_API_KEY` | Your RESAS API KEY |
+| `RESAS_API_VERSION` | Target RESAS API VERSION |
 
 You can create instance more easily.
 
@@ -42,7 +42,7 @@ client = ResasKit::Client.new
 
 ## Supported RESAS API Version
 
-ResasKit supports RESAS API [v1-rc.1](https://opendata.resas-portal.go.jp/docs/api/v1-rc.1/index.html).
+RESAS API [v1-rc.1](https://opendata.resas-portal.go.jp/docs/api/v1-rc.1/index.html)
 
 ## Supported Ruby Versions
 
