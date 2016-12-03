@@ -9,6 +9,26 @@
 
 Ruby wrapper for the [RESAS API](https://opendata.resas-portal.go.jp).
 
+## Installation
+
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'resas_kit'
+```
+
+And then execute:
+
+```sh
+$ bundle
+```
+
+Or install it yourself as:
+
+```sh
+$ gem install resas_kit
+```
+
 ## Usage
 
 ```ruby
