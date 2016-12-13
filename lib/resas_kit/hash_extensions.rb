@@ -10,7 +10,7 @@ class Hash
         .split(/(_*\d+_*)/)
         .reject(&:empty?)
         .map { |k| k.camelize(:lower) }
-        .join('_')
+        .join
         .to_sym
     end
 

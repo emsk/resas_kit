@@ -11,10 +11,10 @@ describe Hash do
 
     let(:camelized_hash) do
       {
-        abcdEfgh_1234_ijklMnop: 'テスト',
-        abcdEfgh_5678_ijklMnop: 'テスト',
-        abcdEfgh_1234: 'テスト',
-        :'1234_abcdEfgh_1234' => { abcdEfgh_9012_ijklMnop: 'テスト' }
+        abcdEfgh1234ijklMnop: 'テスト',
+        abcdEfgh5678ijklMnop: 'テスト',
+        abcdEfgh1234: 'テスト',
+        :'1234abcdEfgh1234' => { abcdEfgh9012ijklMnop: 'テスト' }
       }
     end
 
