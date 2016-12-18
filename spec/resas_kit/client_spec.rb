@@ -101,8 +101,6 @@ describe ResasKit::Client do
     }
   end
 
-  let(:request_path) { 'test' }
-
   let(:underscored_request_params) do
     {
       abcd_efgh_1234_ijkl_mnop: 'テスト',
@@ -114,11 +112,27 @@ describe ResasKit::Client do
 
   describe '#get' do
     let(:request_method) { :get }
+    let(:request_path) { 'test' }
     let(:camelized_request_params) { { query: request_params } }
     let(:response_status) { 200 }
     let(:response) { client.get(request_path, underscored_request_params) }
 
     it_behaves_like 'a normal http client'
+  end
+
+  describe '#aaa_bbb__ccc_ddd__eee' do
+    let(:request_method) { :get }
+    let(:request_path) { 'aaaBbb/cccDdd/eee' }
+    let(:camelized_request_params) { { query: request_params } }
+    let(:response_status) { 200 }
+    let(:response) { client.aaa_bbb__ccc_ddd__eee(underscored_request_params) }
+
+    it_behaves_like 'a normal http client'
+  end
+
+  describe '#_aaa_bbb__ccc_ddd__eee' do
+    subject { -> { client._aaa_bbb__ccc_ddd__eee(underscored_request_params) } }
+    it { is_expected.to raise_error(NoMethodError, "undefined method `_aaa_bbb__ccc_ddd__eee' for #{client}") }
   end
 
   let(:dummy_response) do

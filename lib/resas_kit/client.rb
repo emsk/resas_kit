@@ -68,5 +68,20 @@ module ResasKit
     def request_api_version
       @api_version || API_VERSION
     end
+
+    def method_missing(method, params = {})
+      if respond_to?(method)
+        path = method.to_s
+          .gsub(/__/, '/')
+          .gsub(/_(.)/) { Regexp.last_match(1).camelize }
+        get(path, params)
+      else
+        super
+      end
+    end
+
+    def respond_to_missing?(method, include_private = false)
+      !method.to_s.start_with?('_') || super
+    end
   end
 end
