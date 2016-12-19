@@ -120,19 +120,24 @@ describe ResasKit::Client do
     it_behaves_like 'a normal http client'
   end
 
-  describe '#aaa_bbb__ccc_ddd__eee' do
+  describe '#get_aaa_bbb__ccc_ddd__eee' do
     let(:request_method) { :get }
     let(:request_path) { 'aaaBbb/cccDdd/eee' }
     let(:camelized_request_params) { { query: request_params } }
     let(:response_status) { 200 }
-    let(:response) { client.aaa_bbb__ccc_ddd__eee(underscored_request_params) }
+    let(:response) { client.get_aaa_bbb__ccc_ddd__eee(underscored_request_params) }
 
     it_behaves_like 'a normal http client'
   end
 
-  describe '#_aaa_bbb__ccc_ddd__eee' do
-    subject { -> { client._aaa_bbb__ccc_ddd__eee(underscored_request_params) } }
-    it { is_expected.to raise_error(NoMethodError, "undefined method `_aaa_bbb__ccc_ddd__eee' for #{client}") }
+  describe '#et_aaa_bbb__ccc_ddd__eee' do
+    subject { -> { client.et_aaa_bbb__ccc_ddd__eee(underscored_request_params) } }
+    it { is_expected.to raise_error(NoMethodError, "undefined method `et_aaa_bbb__ccc_ddd__eee' for #{client}") }
+  end
+
+  describe '#aaa_get_bbb__ccc_ddd__eee' do
+    subject { -> { client.aaa_get_bbb__ccc_ddd__eee(underscored_request_params) } }
+    it { is_expected.to raise_error(NoMethodError, "undefined method `aaa_get_bbb__ccc_ddd__eee' for #{client}") }
   end
 
   let(:dummy_response) do

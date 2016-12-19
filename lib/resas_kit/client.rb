@@ -9,9 +9,10 @@ module ResasKit
   #
   # @see https://opendata.resas-portal.go.jp
   class Client
-    API_ENDPOINT = 'https://opendata.resas-portal.go.jp'.freeze
-    API_VERSION  = 'v1-rc.1'.freeze
-    USER_AGENT   = "ResasKit Ruby Gem #{ResasKit::VERSION}".freeze
+    API_ENDPOINT  = 'https://opendata.resas-portal.go.jp'.freeze
+    API_VERSION   = 'v1-rc.1'.freeze
+    USER_AGENT    = "ResasKit Ruby Gem #{ResasKit::VERSION}".freeze
+    METHOD_PREFIX = 'get_'.freeze
 
     attr_accessor :api_key, :api_version
 
@@ -72,6 +73,7 @@ module ResasKit
     def method_missing(method, params = {})
       if respond_to?(method)
         path = method.to_s
+          .sub(/\A#{METHOD_PREFIX}/, '')
           .gsub(/__/, '/')
           .gsub(/_(.)/) { Regexp.last_match(1).camelize }
         get(path, params)
@@ -81,7 +83,7 @@ module ResasKit
     end
 
     def respond_to_missing?(method, include_private = false)
-      !method.to_s.start_with?('_') || super
+      method.to_s.start_with?(METHOD_PREFIX) || super
     end
   end
 end
