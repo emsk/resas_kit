@@ -28,7 +28,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'faraday_middleware', '~> 0.10.1'
   spec.add_development_dependency 'bundler', '~> 1.13'
   spec.add_development_dependency 'coveralls', '~> 0.8.17'
-  spec.add_development_dependency 'rake', '~> 10.0'
+  spec.add_development_dependency 'rake', '~> 12.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'rubocop', '~> 0.46.0'
   spec.add_development_dependency 'simplecov', '~> 0.12.0'
