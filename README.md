@@ -44,6 +44,7 @@ response.status # get status
 
 client.get('tourism/foreigners/forFrom', year: 2016, pref_code: '32', purpose: 2, add_area: '31,33') # underscored key
 client.get('tourism/foreigners/forFrom', year: 2016, prefCode: '32', purpose: 2, addArea: '31,33') # camelized key
+client.get_tourism__foreigners__for_from(year: 2016, pref_code: '32', purpose: 2, add_area: '31,33') # ghost method
 
 client.get('prefectures').body.result[0].pref_name # method chaining
 ```
