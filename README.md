@@ -74,6 +74,7 @@ ResasKit's API documentation is [here](http://www.rubydoc.info/gems/resas_kit).
 * Ruby 2.1
 * Ruby 2.2
 * Ruby 2.3
+* Ruby 2.4
 
 ## Contributing
 
