@@ -64,7 +64,7 @@ client = ResasKit::Client.new
 
 ## Supported RESAS API Version
 
-ResasKit supports RESAS API [v1-rc.1](https://opendata.resas-portal.go.jp/docs/api/v1-rc.1/index.html).
+ResasKit supports RESAS API [v1](https://opendata.resas-portal.go.jp/docs/api/v1/index.html).
 
 ResasKit's API documentation is [here](http://www.rubydoc.info/gems/resas_kit).
 
