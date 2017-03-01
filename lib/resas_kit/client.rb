@@ -10,7 +10,7 @@ module ResasKit
   # @see https://opendata.resas-portal.go.jp
   class Client
     API_ENDPOINT  = 'https://opendata.resas-portal.go.jp'.freeze
-    API_VERSION   = 'v1-rc.1'.freeze
+    API_VERSION   = 'v1'.freeze
     USER_AGENT    = "ResasKit Ruby Gem #{ResasKit::VERSION}".freeze
     METHOD_PREFIX = 'get_'.freeze
 
