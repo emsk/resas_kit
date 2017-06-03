@@ -3,6 +3,17 @@ inherit_from: .rubocop_todo.yml
 AllCops:
   DisplayCopNames: true
 
+Layout/ExtraSpacing:
+  Exclude:
+    - '*.gemspec'
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Layout/SpaceAroundOperators:
+  Exclude:
+    - '*.gemspec'
+
 Metrics/BlockLength:
   Exclude:
     - 'Rakefile'
@@ -18,22 +29,11 @@ Metrics/LineLength:
 Style/DoubleNegation:
   Enabled: false
 
-Style/ExtraSpacing:
-  Exclude:
-    - '*.gemspec'
-
-Style/MultilineMethodCallIndentation:
-  EnforcedStyle: indented
-
 Style/PercentLiteralDelimiters:
   Enabled: false
 
 Style/RegexpLiteral:
   Enabled: false
-
-Style/SpaceAroundOperators:
-  Exclude:
-    - '*.gemspec'
 
 Style/UnneededPercentQ:
   Enabled: false
