@@ -63,11 +63,17 @@ module ResasKit
     end
 
     def request_path(path)
-      "/api/#{request_api_version}/#{URI.escape(path)}"
+      "/api/#{request_api_version}/#{escape(path)}"
     end
 
     def request_api_version
       @api_version || API_VERSION
+    end
+
+    def escape(path)
+      path.split('/')
+        .map { |s| CGI.escape(s) }
+        .join('/')
     end
 
     def method_missing(method, params = {})
