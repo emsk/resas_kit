@@ -2,7 +2,8 @@
 
 [![Gem Version](https://badge.fury.io/rb/resas_kit.svg)](https://badge.fury.io/rb/resas_kit)
 [![Build Status](https://travis-ci.org/emsk/resas_kit.svg?branch=master)](https://travis-ci.org/emsk/resas_kit)
-[![Coverage Status](https://coveralls.io/repos/github/emsk/resas_kit/badge.svg?branch=master)](https://coveralls.io/github/emsk/resas_kit)
+[![Build status](https://ci.appveyor.com/api/projects/status/fovsqoa5omgfsard?svg=true)](https://ci.appveyor.com/project/emsk/resas-kit)
+[![Coverage Status](https://coveralls.io/repos/github/emsk/resas_kit/badge.svg?branch=master)](https://coveralls.io/github/emsk/resas_kit)<br>
 [![Code Climate](https://codeclimate.com/github/emsk/resas_kit/badges/gpa.svg)](https://codeclimate.com/github/emsk/resas_kit)
 [![Dependency Status](https://gemnasium.com/badges/github.com/emsk/resas_kit.svg)](https://gemnasium.com/github.com/emsk/resas_kit)
 [![Inline docs](http://inch-ci.org/github/emsk/resas_kit.svg?branch=master)](http://inch-ci.org/github/emsk/resas_kit)
