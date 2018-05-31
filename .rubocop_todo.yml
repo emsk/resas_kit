@@ -24,13 +24,6 @@ Style/Documentation:
     - 'lib/resas_kit/response/middleware.rb'
     - 'lib/resas_kit/response/raise_error.rb'
 
-# Offense count: 2
-# Cop supports --auto-correct.
-Style/ExpandPathArguments:
-  Exclude:
-    - 'resas_kit.gemspec'
-    - 'spec/spec_helper.rb'
-
 # Offense count: 1
 # Cop supports --auto-correct.
 Style/IfUnlessModifier:
