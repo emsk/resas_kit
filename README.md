@@ -3,7 +3,7 @@
 [![Gem Version](https://badge.fury.io/rb/resas_kit.svg)](https://badge.fury.io/rb/resas_kit)
 [![Build Status](https://travis-ci.org/emsk/resas_kit.svg?branch=master)](https://travis-ci.org/emsk/resas_kit)
 [![Build status](https://ci.appveyor.com/api/projects/status/fovsqoa5omgfsard?svg=true)](https://ci.appveyor.com/project/emsk/resas-kit)
-[![Coverage Status](https://coveralls.io/repos/github/emsk/resas_kit/badge.svg?branch=master)](https://coveralls.io/github/emsk/resas_kit)
+[![Codecov](https://codecov.io/gh/emsk/resas_kit/branch/master/graph/badge.svg)](https://codecov.io/gh/emsk/resas_kit)
 [![Code Climate](https://codeclimate.com/github/emsk/resas_kit/badges/gpa.svg)](https://codeclimate.com/github/emsk/resas_kit)
 [![Inline docs](http://inch-ci.org/github/emsk/resas_kit.svg?branch=master)](http://inch-ci.org/github/emsk/resas_kit)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.txt)
