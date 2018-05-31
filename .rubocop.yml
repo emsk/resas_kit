@@ -29,6 +29,10 @@ Metrics/LineLength:
 Style/DoubleNegation:
   Enabled: false
 
+Style/IfUnlessModifier:
+  Exclude:
+    - 'Gemfile'
+
 Style/PercentLiteralDelimiters:
   Enabled: false
 

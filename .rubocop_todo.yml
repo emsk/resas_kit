@@ -23,9 +23,3 @@ Style/Documentation:
     - 'lib/resas_kit/response.rb'
     - 'lib/resas_kit/response/middleware.rb'
     - 'lib/resas_kit/response/raise_error.rb'
-
-# Offense count: 1
-# Cop supports --auto-correct.
-Style/IfUnlessModifier:
-  Exclude:
-    - 'Gemfile'
