@@ -1,6 +1,7 @@
 # ResasKit
 
 [![Gem Version](https://badge.fury.io/rb/resas_kit.svg)](https://badge.fury.io/rb/resas_kit)
+[![Build Status](https://github.com/emsk/resas_kit/actions/workflows/build.yml/badge.svg)](https://github.com/emsk/resas_kit/actions/workflows/build.yml)
 [![Build Status](https://travis-ci.org/emsk/resas_kit.svg?branch=main)](https://travis-ci.org/emsk/resas_kit)
 [![Build status](https://ci.appveyor.com/api/projects/status/fovsqoa5omgfsard?svg=true)](https://ci.appveyor.com/project/emsk/resas-kit)
 [![Codecov](https://codecov.io/gh/emsk/resas_kit/branch/main/graph/badge.svg)](https://codecov.io/gh/emsk/resas_kit)
