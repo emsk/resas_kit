@@ -4,6 +4,7 @@
 [![Build Status](https://github.com/emsk/resas_kit/actions/workflows/build.yml/badge.svg)](https://github.com/emsk/resas_kit/actions/workflows/build.yml)
 [![Build Status](https://travis-ci.org/emsk/resas_kit.svg?branch=main)](https://travis-ci.org/emsk/resas_kit)
 [![Build status](https://ci.appveyor.com/api/projects/status/fovsqoa5omgfsard?svg=true)](https://ci.appveyor.com/project/emsk/resas-kit)
+[![Build Status](https://dev.azure.com/emsk/resas_kit/_apis/build/status/emsk.resas_kit?branchName=main)](https://dev.azure.com/emsk/resas_kit/_build/latest?definitionId=6&branchName=main)
 [![Codecov](https://codecov.io/gh/emsk/resas_kit/branch/main/graph/badge.svg)](https://codecov.io/gh/emsk/resas_kit)
 [![Code Climate](https://codeclimate.com/github/emsk/resas_kit/badges/gpa.svg)](https://codeclimate.com/github/emsk/resas_kit)
 [![Inline docs](http://inch-ci.org/github/emsk/resas_kit.svg?branch=main)](http://inch-ci.org/github/emsk/resas_kit)
