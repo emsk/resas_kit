@@ -9,6 +9,11 @@ Layout/ExtraSpacing:
   Exclude:
     - '*.gemspec'
 
+Layout/LineLength:
+  Max: 100
+  Exclude:
+    - 'spec/**/*.rb'
+
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented
 
@@ -22,11 +27,6 @@ Metrics/BlockLength:
     - '**/*.rake'
     - 'spec/**/*.rb'
     - '*.gemspec'
-
-Metrics/LineLength:
-  Max: 100
-  Exclude:
-    - 'spec/**/*.rb'
 
 Style/DoubleNegation:
   Enabled: false
